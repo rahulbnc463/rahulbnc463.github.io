@@ -342,6 +342,24 @@ section .title::after {
 .project .title::after {
   content: "See my work";
 }
+.card {
+  height: 39rem !important;
+  position: relative;
+}
+.project .carousel .card .box :nth-child(3) {
+  /* height: 80px;  */
+  text-align: center;
+}
+@media (max-width: 599px) {
+  .card {
+    height: 39rem !important;
+  }
+}
+/* @media (max-width: 999px) {
+  .card {
+    height: 39rem !important;
+  }
+} */
 
 .project .carousel .card {
   background: #222;
@@ -350,6 +368,7 @@ section .title::after {
   text-align: center;
   overflow: hidden;
   transition: all 0.3s ease;
+  height: auto;
 }
 .project .carousel .card:hover {
   background: #9416e9;
@@ -363,9 +382,9 @@ section .title::after {
   justify-content: center;
   transition: all 0.3s ease;
 }
-.project .carousel .card:hover .box {
+/* .project .carousel .card:hover .box {
   transform: scale(1.05);
-}
+} */
 .project .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
@@ -373,11 +392,15 @@ section .title::after {
 }
 
 .repo-links {
+  position: absolute;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 45px;
   margin-top: 5%;
+  top: 85%;
+  left: 1.8%;
+  /* right: 20%; */
   /* border: 2px solid wheat; */
 }
 
@@ -403,9 +426,6 @@ section .title::after {
 .demo-div:hover {
   width: 40%;
   font-weight: bold;
-}
-.techStack {
-  color: purple;
 }
 
 .demo-div a,
