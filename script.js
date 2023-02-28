@@ -92,7 +92,7 @@ document.addEventListener("contextmenu", function (e) {
 
 function open_resume() {
   window.open(
-    "https://drive.google.com/file/d/1ESUSG_0PL8P8B9qQmUeHoTW_NoMDK6yW/view?usp=share_link",
+    "https://drive.google.com/file/d/1-Eoi3NPkdxjW6Klv0lxAqXF89-jM47YL/view?usp=sharing",
     "_blank"
   );
 }
